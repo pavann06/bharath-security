@@ -30,6 +30,97 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <style>
+        #clients {
+    background-color: #f8f9fa; /* Light grey background */
+    padding: 60px 0; /* Vertical padding for top and bottom */
+    margin-top: 50px; /* Space above the section */
+    margin-bottom: 50px; /* Space below the section */
+}
+
+/* #clients .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color: white;
+    border-radius: 10px; 
+} */
+
+
+
+#clients .swiper-slide img {
+    max-width: 100%; /* Ensure images do not exceed the container */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain;
+    padding: 10px;
+}
+
+#clients .swiper-pagination-bullet {
+    background-color: #007bff; /* Color for active pagination bullets */
+    opacity: 1;
+}
+
+#clients .swiper-pagination-bullet-active {
+    background-color: #0056b3; /* Darker blue for the active bullet */
+}
+
+    </style>
+
+    <style>
+        /* Stats Section */
+.stats {
+  padding: 60px 0;
+}
+
+.stats-box {
+  background-color: #f1f7fe; /* Light background color */
+  border-radius: 10px;       /* Rounded corners */
+  padding: 20px;             /* Spacing inside the box */
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow effect */
+  transition: all 0.3s ease;
+  
+}
+
+.stats-box:hover {
+  transform: translateY(-10px); /* Slight hover effect */
+}
+
+.icon-box {
+  background-color: #007bff;   /* Blue circle background */
+  border-radius: 50%;
+  padding: 20px;
+  margin-bottom: 15px;
+  color: #fff;                 /* White icon */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-box i {
+  font-size: 30px;            /* Icon size */
+}
+
+.stats-item span {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+}
+
+.stats-item p {
+  margin: 0;
+  font-size: 18px;
+  color: #777;
+}
+
+    </style>
+
 </head>
 
 <body>
@@ -638,6 +729,147 @@
     <!-- Team End -->
 
 
+
+
+
+
+
+
+
+
+<!-- Stats Section -->
+<section id="stats" class="stats section">
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+      <div class="row gy-4 justify-content-center">
+  
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center stats-box">
+          <div class="icon-box">
+            <i class="bi bi-emoji-smile"></i>
+          </div>
+          <div class="stats-item">
+            <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Happy Clients</p>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center stats-box">
+          <div class="icon-box">
+            <i class="bi bi-journal-richtext"></i>
+          </div>
+          <div class="stats-item">
+            <span data-purecounter-start="0" data-purecounter-end="521" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Projects</p>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center stats-box">
+          <div class="icon-box">
+            <i class="bi bi-headset"></i>
+          </div>
+          <div class="stats-item">
+            <span data-purecounter-start="0" data-purecounter-end="1463" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Hours Of Support</p>
+          </div>
+        </div>
+  
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center stats-box">
+          <div class="icon-box">
+            <i class="bi bi-people"></i>
+          </div>
+          <div class="stats-item">
+            <span data-purecounter-start="0" data-purecounter-end="15" data-purecounter-duration="1" class="purecounter"></span>
+            <p>Hard Workers</p>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Clients Section -->
+<section id="clients" class="clients section light-background" >
+    <div class="container">
+        <div class="swiper init-swiper">
+            <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  },
+                  "breakpoints": {
+                    "320": {
+                      "slidesPerView": 2,
+                      "spaceBetween": 40
+                    },
+                    "480": {
+                      "slidesPerView": 3,
+                      "spaceBetween": 60
+                    },
+                    "640": {
+                      "slidesPerView": 4,
+                      "spaceBetween": 80
+                    },
+                    "992": {
+                      "slidesPerView": 6,
+                      "spaceBetween": 120
+                    }
+                  }
+                }
+            </script>
+            <div class="swiper-wrapper align-items-center">
+                <div class="swiper-slide"><img src="./img/carousel-1.jpg" class="img-fluid" alt="Client 1"></div>
+                <div class="swiper-slide"><img src="./img/carousel-2.jpg" class="img-fluid" alt="Client 2"></div>
+                <div class="swiper-slide"><img src="./img/carousel-3.jpg" class="img-fluid" alt="Client 3"></div>
+                <div class="swiper-slide"><img src="./img/carousel-1.jpg" class="img-fluid" alt="Client 4"></div>
+                <div class="swiper-slide"><img src="./img/carousel-2.jpg" class="img-fluid" alt="Client 5"></div>
+                <div class="swiper-slide"><img src="./img/carousel-2.jpg" class="img-fluid" alt="Client 6"></div>
+                <div class="swiper-slide"><img src="./img/carousel-2.jpg" class="img-fluid" alt="Client 7"></div>
+                <div class="swiper-slide"><img src="./img/carousel-2.jpg" class="img-fluid" alt="Client 8"></div>
+            </div>
+            <!-- Pagination -->
+            <!-- <div class="swiper-pagination"></div> -->
+        </div>
+    </div>
+</section>
+<!-- /Clients Section -->
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
     <!-- Testimonial Start -->
     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
         <div class="container">
@@ -747,6 +979,31 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@srexi/purecounterjs/dist/purecounter_vanilla.js"></script>
+
+
+    <script>
+        
+  document.addEventListener('DOMContentLoaded', function() {
+    const swiperElements = document.querySelectorAll('.init-swiper');
+    swiperElements.forEach((swiperElement) => {
+      const config = JSON.parse(swiperElement.querySelector('.swiper-config').innerHTML);
+      new Swiper(swiperElement, config);
+    });
+  });
+</script>
+
+<script>
+  
+    new PureCounter();
+</script>
+
+  
+
+
 </body>
 
 </html>
