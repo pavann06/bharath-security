@@ -42,15 +42,7 @@
     margin-bottom: 50px; /* Space below the section */
 }
 
-/* #clients .swiper-slide {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    background-color: white;
-    border-radius: 10px; 
-} */
+
 
 
 
@@ -72,54 +64,85 @@
 
     </style>
 
+
+
+
     <style>
-        /* Stats Section */
-.stats {
-  padding: 60px 0;
+        /* General Section Styling */
+#stats {
+    padding: 50px 0;
+    background-color: #f8f9fa; /* Light background like the image */
+}
+.row {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Controls the space between the boxes */
+    flex-wrap: wrap; /* Ensures they wrap if the screen is too small */
 }
 
 .stats-box {
-  background-color: #f1f7fe; /* Light background color */
-  border-radius: 10px;       /* Rounded corners */
-  padding: 20px;             /* Spacing inside the box */
-  text-align: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Light shadow effect */
-  transition: all 0.3s ease;
-  
+    background-color: #f1f7fc; /* Light blue background */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    flex: 1; /* Ensures the boxes take equal space */
+    max-width: 250px; /* Adjust the max width for each box */
 }
 
 .stats-box:hover {
-  transform: translateY(-10px); /* Slight hover effect */
+    transform: translateY(-10px); /* Lift effect on hover */
 }
 
 .icon-box {
-  background-color: #007bff;   /* Blue circle background */
-  border-radius: 50%;
-  padding: 20px;
-  margin-bottom: 15px;
-  color: #fff;                 /* White icon */
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+    background-color: #65b530; /* Blue background for the icon */
+    border-radius: 60%; /* Circular background */
+    padding: 20px; /* Padding for larger circle */
+    display: inline-flex; /* Align icon in the center */
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 70px;  /* Circle size (width and height same) */
+    height: 70px;
 }
 
 .icon-box i {
-  font-size: 30px;            /* Icon size */
+    color: white; /* White color for the icon */
+    font-size: 32px; /* Adjust the size of the icon */
 }
 
-.stats-item span {
-  font-size: 36px;
-  font-weight: bold;
-  color: #333;
+/* Styling for the Stats Item */
+.stats-item {
+    font-family: 'Arial', sans-serif;
+    font-size: 22px;
+    font-weight: 200;
+    color: #333;
 }
 
 .stats-item p {
-  margin: 0;
-  font-size: 18px;
-  color: #777;
+    font-size: 16px;
+    color: #6c757d; /* Grey text for the labels */
+    margin-top: 10px;
 }
 
-    </style>
+/* Purecounter number styling */
+.purecounter {
+    font-size: 32px; /* Large number size */
+    font-weight: 700;
+    color: #333; /* Dark text */
+}
+
+@media (max-width: 768px) {
+    .stats-box {
+        margin-bottom: 20px;
+    }
+}
+
+    </style> 
+
+    
+   
 
 </head>
 
