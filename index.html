@@ -34,12 +34,14 @@
 
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
 
+  
+
     <style>
         #clients {
-    background-color: #f8f9fa; /* Light grey background */
-    padding: 60px 0; /* Vertical padding for top and bottom */
-    margin-top: 50px; /* Space above the section */
-    margin-bottom: 50px; /* Space below the section */
+    background-color: #f8f9fa;
+    padding: 60px 0; 
+    margin-top: 50px; 
+    margin-bottom: 50px; 
 }
 
 
@@ -47,69 +49,71 @@
 
 
 #clients .swiper-slide img {
-    max-width: 100%; /* Ensure images do not exceed the container */
-    height: auto; /* Maintain aspect ratio */
+    max-width: 100%; 
+    height: auto; 
     object-fit: contain;
     padding: 10px;
 }
 
 #clients .swiper-pagination-bullet {
-    background-color: #007bff; /* Color for active pagination bullets */
+    background-color: #007bff;
     opacity: 1;
 }
 
 #clients .swiper-pagination-bullet-active {
-    background-color: #0056b3; /* Darker blue for the active bullet */
+    background-color: #0056b3; 
 }
 
-    </style>
+    </style> 
 
 
 
-
+ 
     <style>
         /* General Section Styling */
 #stats {
     padding: 50px 0;
-    background-color: #f8f9fa; /* Light background like the image */
+    background-color: #f8f9fa; 
+    
 }
-.row {
+/* .row {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Controls the space between the boxes */
-    flex-wrap: wrap; /* Ensures they wrap if the screen is too small */
-}
+    gap: 20px; 
+    flex-wrap: wrap; 
+} */
 
 .stats-box {
-    background-color: #f1f7fc; /* Light blue background */
+    background-color: #f1f7fc; 
     padding: 20px;
     border-radius: 10px;
     text-align: center;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-    flex: 1; /* Ensures the boxes take equal space */
-    max-width: 250px; /* Adjust the max width for each box */
+    flex: 1; 
+    max-width: 250px; 
+   
 }
 
 .stats-box:hover {
-    transform: translateY(-10px); /* Lift effect on hover */
+    transform: translateY(-10px); 
 }
 
 .icon-box {
-    background-color: #65b530; /* Blue background for the icon */
-    border-radius: 60%; /* Circular background */
-    padding: 20px; /* Padding for larger circle */
-    display: inline-flex; /* Align icon in the center */
+    background-color: #65b530; 
+    border-radius: 60%; 
+    padding: 20px; 
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    width: 70px;  /* Circle size (width and height same) */
+    width: 70px;  
     height: 70px;
 }
 
 .icon-box i {
-    color: white; /* White color for the icon */
-    font-size: 32px; /* Adjust the size of the icon */
+    color: white; 
+    font-size: 32px;
 }
 
 /* Styling for the Stats Item */
@@ -230,7 +234,7 @@
 
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 pb-5">
+    <div class="container-fluid p-0 pb-5" >
         <div class="owl-carousel header-carousel position-relative">
             <div class="owl-carousel-item position-relative">
                 <img class="img-fluid" src="img/carousel-1.jpg" alt="">
@@ -329,6 +333,8 @@
         </div>
     </div>
     <!-- Facts Start -->
+
+    
 
 
     <!-- About Start -->
@@ -626,7 +632,7 @@
 
 
     <!-- Quote Start -->
-    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0">
+    <div class="container-fluid bg-light overflow-hidden my-5 px-lg-0" id="quote">
         <div class="container quote px-lg-0">
             <div class="row g-0 mx-lg-0">
                 <div class="col-lg-6 ps-lg-0" style="min-height: 400px;">
@@ -763,9 +769,9 @@
 <!-- Stats Section -->
 <section id="stats" class="stats section">
     <div class="container" data-aos="fade-up" data-aos-delay="100">
-      <div class="row gy-4 justify-content-center">
+      <div class="row gy-4 justify-content-center" id="stats">
   
-        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center stats-box">
+        <div class="col-lg-3 col-md-6 d-flex flex-column align-items-center stats-box" >
           <div class="icon-box">
             <i class="bi bi-emoji-smile"></i>
           </div>

@@ -564,3 +564,27 @@
     letter-spacing: 1px;
     box-shadow: none;
 }
+
+#quote{
+    margin-top: 10rem !important;
+
+}
+
+/* #stats{
+    display: flex !important;
+   
+  
+} */
+
+#stats .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centers items horizontally */
+    gap: 30px; /* Adds space between items */
+}
+
+#stats .stats-box {
+    flex: 1 1 22%; /* Adjusts the width of each stat box, ensuring all fit in one row */
+    max-width: 22%; /* Prevents them from getting too wide */
+    text-align: center; /* Keeps the text centered */
+}
