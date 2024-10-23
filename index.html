@@ -150,6 +150,23 @@
 }
     </style>
 
+    <style>
+      .portfolio-container {
+    row-gap: 30px; /* Increases vertical space between rows */
+}
+
+.portfolio-item {
+    margin-bottom: 80px; /* Adds additional space between rows */
+}
+
+@media (max-width: 768px) {
+    .portfolio-container {
+        row-gap: 20px; /* Adjusts for smaller screens */
+    }
+}
+
+    </style>
+
     
   </head>
 
@@ -912,249 +929,122 @@
     </div>
     <!-- Feature End -->
 
-    <!-- Projects Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-        <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
-          <div
-            class="bg-primary mb-3 mx-auto"
-            style="width: 60px; height: 2px"
-          ></div>
-          <h1 class="display-5 mb-5">Our Work, Your Safety!
-          </h1>
+<!-- Projects Start -->
+<div class="container-xxl py-5">
+  <div class="container">
+    <div class="text-center wow fadeInUp" data-wow-delay="0.1s">
+      <div class="bg-primary mb-3 mx-auto" style="width: 60px; height: 2px"></div>
+      <h1 class="display-5 mb-5">Our Work, Your Safety!</h1>
+    </div>
+
+    <div class="row g-4 portfolio-container">
+      <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp" data-wow-delay="0.1s">
+        <div class="portfolio-inner">
+          <img class="img-fluid w-100" src="img/images/gated.png" alt="" />
+          <div class="text-center p-4">
+            <p class="text-primary mb-2">Gated Communities</p>
+            <h5 class="lh-base mb-0">Gated Apartments & Societies, Villas & Guest Houses</h5>
+          </div>
+          <div class="portfolio-text text-center bg-white p-4">
+            <p class="text-primary mb-2">Gated Communities</p>
+            <h5 class="lh-base mb-3">Gated Apartments & Societies, Villas & Guest Houses</h5>
+            <div class="d-flex justify-content-center">
+              <a class="btn btn-square btn-primary rounded-circle mx-1" href="img/images/gated.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+              <a class="btn btn-square btn-primary rounded-circle mx-1" href="#"><i class="fa fa-link"></i></a>
+            </div>
+          </div>
         </div>
-        <!-- <div class="row mt-n2 wow fadeInUp" data-wow-delay="0.3s">
-          <div class="col-12 text-center">
-            <ul class="list-inline mb-5" id="portfolio-flters">
-              <li class="mx-2 active" data-filter="*">All</li>
-              <li class="mx-2" data-filter=".first">Complete Projects</li>
-              <li class="mx-2" data-filter=".second">Ongoing Projects</li>
-            </ul>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp" data-wow-delay="0.3s">
+        <div class="portfolio-inner">
+          <img class="img-fluid w-100" src="img/images/malls.png" alt="" />
+          <div class="text-center p-4">
+            <p class="text-primary mb-2">Malls & Commercial Hubs</p>
+            <h5 class="lh-base mb-0">Entry & Exit, Parking & Lift Control for Malls & Buildings</h5>
           </div>
-        </div> -->
-        <div class="row g-4 portfolio-container">
-          <div
-            class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp"
-            data-wow-delay="0.1s"
-          >
-            <div class="portfolio-inner">
-              <img class="img-fluid w-100" src="img/images/gated.png" alt="" />
-              <div class="text-center p-4">
-                <p class="text-primary mb-2">Gated Communities
-                </p>
-                <h5 class="lh-base mb-0">
-                  Gated Apartments & Soceities, Villas & guest houses
-
-                </h5>
-              </div>
-              <div class="portfolio-text text-center bg-white p-4">
-                <p class="text-primary mb-2">Gated Communities
-                </p>
-                <h5 class="lh-base mb-3">
-                  Gated Apartments & Soceities, Villas & guest houses
-
-                </h5>
-                <div class="d-flex justify-content-center">
-                  <a
-                    class="btn btn-square btn-primary rounded-circle mx-1"
-                    href="img/images/gated.png"
-                    data-lightbox="portfolio"
-                    ><i class="fa fa-eye"></i
-                  ></a>
-                  <a
-                    class="btn btn-square btn-primary rounded-circle mx-1"
-                    href=""
-                    ><i class="fa fa-link"></i
-                  ></a>
-                </div>
-              </div>
+          <div class="portfolio-text text-center bg-white p-4">
+            <p class="text-primary mb-2">Malls & Commercial Hubs</p>
+            <h5 class="lh-base mb-3">Entry & Exit, Parking & Lift Control for Malls & Buildings</h5>
+            <div class="d-flex justify-content-center">
+              <a class="btn btn-square btn-primary rounded-circle mx-1" href="img/images/malls.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+              <a class="btn btn-square btn-primary rounded-circle mx-1" href="#"><i class="fa fa-link"></i></a>
             </div>
           </div>
-          <div
-            class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp"
-            data-wow-delay="0.3s"
-          >
-            <div class="portfolio-inner">
-              <img class="img-fluid w-100" src="img/images/malls.png" alt="" />
-              <div class="text-center p-4">
-                <p class="text-primary mb-2">Malls & Commercial Hubs
-                </p>
-                <h5 class="lh-base mb-0">
-                  Entry & Exit, Parking & lift control for Malls & buildings
-
-                </h5>
-              </div>
-              <div class="portfolio-text text-center bg-white p-4">
-                <p class="text-primary mb-2">Malls & Commercial Hubs</p>
-                <h5 class="lh-base mb-3">
-                  Entry & Exit, Parking & lift control for Malls & buildings
-                </h5>
-                <div class="d-flex justify-content-center">
-                  <a
-                    class="btn btn-square btn-primary rounded-circle mx-1"
-                    href="img/images/malls.png"
-                    data-lightbox="portfolio"
-                    ><i class="fa fa-eye"></i
-                  ></a>
-                  <a
-                    class="btn btn-square btn-primary rounded-circle mx-1"
-                    href=""
-                    ><i class="fa fa-link"></i
-                  ></a>
-                </div>
-              </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp" data-wow-delay="0.5s">
+        <div class="portfolio-inner">
+          <img class="img-fluid w-100" src="img/images/corporate.png" alt="" />
+          <div class="text-center p-4">
+            <p class="text-primary mb-2">Corporate Offices</p>
+            <h5 class="lh-base mb-0">Small to Large Office Spaces, IT Parks & Front Office</h5>
+          </div>
+          <div class="portfolio-text text-center bg-white p-4">
+            <p class="text-primary mb-2">Corporate Offices</p>
+            <h5 class="lh-base mb-3">Small to Large Office Spaces, IT Parks & Front Office</h5>
+            <div class="d-flex justify-content-center">
+              <a class="btn btn-square btn-primary rounded-circle mx-1" href="img/images/corporate.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+              <a class="btn btn-square btn-primary rounded-circle mx-1" href="#"><i class="fa fa-link"></i></a>
             </div>
           </div>
-          <div
-            class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp"
-            data-wow-delay="0.5s"
-          >
-            <div class="portfolio-inner">
-              <img class="img-fluid w-100" src="img/images/corporate.png" alt="" />
-              <div class="text-center p-4">
-                <p class="text-primary mb-2">Corporate Offices
-                </p>
-                <h5 class="lh-base mb-0">
-                  Small to Large Office spaces, IT Parks & Front Office
-
-                </h5>
-              </div>
-              <div class="portfolio-text text-center bg-white p-4">
-                <p class="text-primary mb-2">Corporate Offices
-                </p>
-                <h5 class="lh-base mb-3">
-                  Small to Large Office spaces, IT Parks & Front Office
-
-                </h5>
-                <div class="d-flex justify-content-center">
-                  <a
-                    class="btn btn-square btn-primary rounded-circle mx-1"
-                    href="img/images/corporate.png"
-                    data-lightbox="portfolio"
-                    ><i class="fa fa-eye"></i
-                  ></a>
-                  <a
-                    class="btn btn-square btn-primary rounded-circle mx-1"
-                    href=""
-                    ><i class="fa fa-link"></i
-                  ></a>
-                </div>
-              </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp" data-wow-delay="0.1s">
+        <div class="portfolio-inner">
+          <img class="img-fluid w-100" src="img/images/schools.png" alt="" />
+          <div class="text-center p-4">
+            <p class="text-primary mb-2">Restaurants, Schools & More</p>
+            <h5 class="lh-base mb-0">Hotels, Restaurants, Schools, Colleges, Cafes & More</h5>
+          </div>
+          <div class="portfolio-text text-center bg-white p-4">
+            <p class="text-primary mb-2">Restaurants, Schools & More</p>
+            <h5 class="lh-base mb-3">Hotels, Restaurants, Schools, Colleges, Cafes & More</h5>
+            <div class="d-flex justify-content-center">
+              <a class="btn btn-square btn-primary rounded-circle mx-1" href="img/images/schools.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+              <a class="btn btn-square btn-primary rounded-circle mx-1" href="#"><i class="fa fa-link"></i></a>
             </div>
           </div>
-          <div
-            class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp"
-            data-wow-delay="0.1s"
-          >
-            <div class="portfolio-inner">
-              <img class="img-fluid w-100" src="img/images/schools.png" alt="" />
-              <div class="text-center p-4">
-                <p class="text-primary mb-2">Restaurants, Schools & more
-                </p>
-                <h5 class="lh-base mb-0">
-                  Hotels, Restaurants, Schools, Colleges, Cafes & what not
-
-                </h5>
-              </div>
-              <div class="portfolio-text text-center bg-white p-4">
-                <p class="text-primary mb-2">Restaurants, Schools & more
-                </p>
-                <h5 class="lh-base mb-3">
-                  Hotels, Restaurants, Schools, Colleges, Cafes & what not
-
-                </h5>
-                <div class="d-flex justify-content-center">
-                  <a
-                    class="btn btn-square btn-primary rounded-circle mx-1"
-                    href="img/images/schools.png"
-                    data-lightbox="portfolio"
-                    ><i class="fa fa-eye"></i
-                  ></a>
-                  <a
-                    class="btn btn-square btn-primary rounded-circle mx-1"
-                    href=""
-                    ><i class="fa fa-link"></i
-                  ></a>
-                </div>
-              </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp" data-wow-delay="0.3s">
+        <div class="portfolio-inner">
+          <img class="img-fluid w-100" src="img/images/functions.png" alt="" />
+          <div class="text-center p-4">
+            <p class="text-primary mb-2">Events & Functions</p>
+            <h5 class="lh-base mb-0">Events, Shows, Concerts, Movie Functions, Marriages etc.</h5>
+          </div>
+          <div class="portfolio-text text-center bg-white p-4">
+            <p class="text-primary mb-2">Events & Functions</p>
+            <h5 class="lh-base mb-3">Events, Shows, Concerts, Movie Functions, Marriages etc.</h5>
+            <div class="d-flex justify-content-center">
+              <a class="btn btn-square btn-primary rounded-circle mx-1" href="img/images/functions.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+              <a class="btn btn-square btn-primary rounded-circle mx-1" href="#"><i class="fa fa-link"></i></a>
             </div>
           </div>
-          <div
-            class="col-lg-4 col-md-6 portfolio-item first wow fadeInUp"
-            data-wow-delay="0.3s"
-          >
-            <div class="portfolio-inner">
-              <img class="img-fluid w-100" src="img/images/functions.png" alt="" />
-              <div class="text-center p-4">
-                <p class="text-primary mb-2">Events & Functions
-                </p>
-                <h5 class="lh-base mb-0">
-                  Events, Shows, Concerts, Movie Functions, Marriages etc
-                </h5>
-              </div>
-              <div class="portfolio-text text-center bg-white p-4">
-                <p class="text-primary mb-2">Events & Functions
-                </p>
-                <h5 class="lh-base mb-3">
-                  Events, Shows, Concerts, Movie Functions, Marriages etc
-                </h5>
-                <div class="d-flex justify-content-center">
-                  <a
-                    class="btn btn-square btn-primary rounded-circle mx-1"
-                    href="img/images/functions.png"
-                    data-lightbox="portfolio"
-                    ><i class="fa fa-eye"></i
-                  ></a>
-                  <a
-                    class="btn btn-square btn-primary rounded-circle mx-1"
-                    href=""
-                    ><i class="fa fa-link"></i
-                  ></a>
-                </div>
-              </div>
-            </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 portfolio-item wow fadeInUp" data-wow-delay="0.5s">
+        <div class="portfolio-inner">
+          <img class="img-fluid w-100" src="img/images/cleaning.png" alt="" />
+          <div class="text-center p-4">
+            <p class="text-primary mb-2">Clean Spaces, Clear Minds</p>
+            <h5 class="lh-base mb-0">Housekeeping & Manpower Supply for All Spaces</h5>
           </div>
-          <div
-            class="col-lg-4 col-md-6 portfolio-item second wow fadeInUp"
-            data-wow-delay="0.5s"
-          >
-            <div class="portfolio-inner">
-              <img class="img-fluid w-100" src="img/images/cleaning.png" alt="" />
-              <div class="text-center p-4">
-                <p class="text-primary mb-2">Clean Spaces, Clear Minds
-                </p>
-                <h5 class="lh-base mb-0">
-                  House Keeping & Man Power supply for all Spaces 
-
-                </h5>
-              </div>
-              <div class="portfolio-text text-center bg-white p-4">
-                <p class="text-primary mb-2">Clean Spaces, Clear Minds
-                </p>
-                <h5 class="lh-base mb-3">
-                  House Keeping & Man Power supply for all Spaces 
-
-                </h5>
-                <div class="d-flex justify-content-center">
-                  <a
-                    class="btn btn-square btn-primary rounded-circle mx-1"
-                    href="img/images/cleaning.png"
-                    data-lightbox="portfolio"
-                    ><i class="fa fa-eye"></i
-                  ></a>
-                  <a
-                    class="btn btn-square btn-primary rounded-circle mx-1"
-                    href=""
-                    ><i class="fa fa-link"></i
-                  ></a>
-                </div>
-              </div>
+          <div class="portfolio-text text-center bg-white p-4">
+            <p class="text-primary mb-2">Clean Spaces, Clear Minds</p>
+            <h5 class="lh-base mb-3">Housekeeping & Manpower Supply for All Spaces</h5>
+            <div class="d-flex justify-content-center">
+              <a class="btn btn-square btn-primary rounded-circle mx-1" href="img/images/cleaning.png" data-lightbox="portfolio"><i class="fa fa-eye"></i></a>
+              <a class="btn btn-square btn-primary rounded-circle mx-1" href="#"><i class="fa fa-link"></i></a>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- Projects End -->
+  </div>
+</div>
+<!-- Projects End -->
+
 
     <!-- Quote Start -->
     <div
