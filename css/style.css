@@ -588,3 +588,7 @@
     max-width: 22%; /* Prevents them from getting too wide */
     text-align: center; /* Keeps the text centered */
 }
+#logo-1 {
+    width: 80px; /* Adjust the width as needed */
+    height: 80px; /* Adjust the height as needed */
+}
