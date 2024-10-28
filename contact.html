@@ -160,57 +160,56 @@
                         <p class="mb-4">I'm Venkata Reddy, founder of Bharat Security, and we're here to provide you with tailored, cost-effective solutions. Let our trained team ensure your safety! Contact us today!
                             <!-- <a href="https://htmlcodex.com/contact-form">Download Now</a> -->
                             .</p>
-                            <form>
-                                <div class="row g-3">
-                                    <!-- Your Name -->
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
-                                            <label for="name">Your Name</label>
-                                        </div>
-                                    </div>
-                            
-                                    <!-- Company Name -->
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="text" class="form-control" id="company" placeholder="Company Name">
-                                            <label for="company">Company Name</label>
-                                        </div>
-                                    </div>
-                            
-                                    <!-- Mobile Number -->
-                                    <div class="col-md-6">
-                                        <div class="form-floating">
-                                            <input type="tel" class="form-control" id="mobile" placeholder="Mobile Number">
-                                            <label for="mobile">Mobile Number</label>
-                                        </div>
-                                    </div>
-                            
-                                    <!-- Select Service -->
-                                    <div class="col-12 col-sm-6">
-                                        <select class="form-select border-0" style="height: 55px">
-                                          <option selected>Select A Service</option>
-                                          <option value="Security">Security
-                                          </option>
-                                          <option value="House-Keeping">House Keeping
-                                          </option>
-                                        
-                                        </select>
+                            <form id="contactForm">
+                              <div class="row g-3">
+                                  <!-- Your Name -->
+                                  <div class="col-md-6">
+                                      <div class="form-floating">
+                                          <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                          <label for="name">Your Name</label>
                                       </div>
-                                    <!-- How Can I Help You? -->
-                                    <div class="col-12">
-                                        <div class="form-floating">
-                                            <textarea class="form-control" placeholder="How Can I Help You?" id="help" style="height: 100px"></textarea>
-                                            <label for="help">How Can I Help You?</label>
-                                        </div>
-                                    </div>
-                            
-                                    <!-- Submit Button -->
-                                    <div class="col-12">
-                                        <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
-                                    </div>
-                                </div>
-                            </form>
+                                  </div>
+                          
+                                  <!-- Company Name -->
+                                  <div class="col-md-6">
+                                      <div class="form-floating">
+                                          <input type="text" class="form-control" id="company" placeholder="Company Name">
+                                          <label for="company">Company Name</label>
+                                      </div>
+                                  </div>
+                          
+                                  <!-- Mobile Number -->
+                                  <div class="col-md-6">
+                                      <div class="form-floating">
+                                          <input type="tel" class="form-control" id="mobile" placeholder="Mobile Number">
+                                          <label for="mobile">Mobile Number</label>
+                                      </div>
+                                  </div>
+                          
+                                  <!-- Select Service -->
+                                  <div class="col-12 col-sm-6">
+                                      <select class="form-select border-0" style="height: 55px" id="service">
+                                          <option selected>Select A Service</option>
+                                          <option value="Security">Security</option>
+                                          <option value="House-Keeping">House Keeping</option>
+                                      </select>
+                                  </div>
+                          
+                                  <!-- How Can I Help You? -->
+                                  <div class="col-12">
+                                      <div class="form-floating">
+                                          <textarea class="form-control" placeholder="How Can I Help You?" id="help" style="height: 100px"></textarea>
+                                          <label for="help">How Can I Help You?</label>
+                                      </div>
+                                  </div>
+                          
+                                  <!-- Submit Button -->
+                                  <div class="col-12">
+                                      <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>
+                                  </div>
+                              </div>
+                          </form>
+                          
                             
                     </div>
                 </div>
@@ -337,6 +336,54 @@
 
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
+    
+    <script>
+      window.onload = function () {
+          document
+              .getElementById("contactForm")
+              .addEventListener("submit", async function (e) {
+                  e.preventDefault();
+  
+                  const name = document.getElementById("name").value;
+                  const company = document.getElementById("company").value;
+                  const mobile = document.getElementById("mobile").value;
+                  const service = document.getElementById("service").value;
+                  const help = document.getElementById("help").value;
+  
+                  const payload = {
+                      to_email: "your-email@example.com",  // Replace with your email
+                      name: name,
+                      company: company,
+                      mobile: mobile,
+                      service: service,
+                      help: help
+                  };
+  
+                  try {
+                      const response = await fetch(
+                          "api",  // Replace with your API endpoint
+                          {
+                              method: "POST",
+                              headers: {
+                                  "Content-Type": "application/json",
+                              },
+                              body: JSON.stringify(payload),
+                          }
+                      );
+  
+                      if (response.ok) {
+                          alert("Your message has been sent successfully!");
+                      } else {
+                          alert("There was an error sending your message. Please try again.");
+                      }
+                  } catch (error) {
+                      console.error("Error:", error);
+                      alert("An error occurred. Please check your internet connection and try again.");
+                  }
+              });
+      };
+  </script>
+  
 </body>
 
 </html>
